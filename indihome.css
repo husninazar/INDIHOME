@@ -1,0 +1,356 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  padding-top: 80px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Modern Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1000;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 15px 5%;
+}
+
+header.scrolled {
+  background: rgba(230, 0, 0, 0.95);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Added padding for better spacing */
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: auto; /* Pushes logo to the far left */
+}
+
+.navbar {
+  margin-left: auto; /* Pushes nav to the right */
+  padding-right: 40px; /* Moves nav links further right */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin-left: auto; /* Ensures links stay right-aligned */
+}
+
+/* Rest of your existing nav-link styles remain the same */
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ffcccc;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.burger div {
+  width: 100%;
+  height: 3px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-top: -80px;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  filter: brightness(1.1);
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  background: rgba(148, 148, 148, 0.6);
+  padding: 30px 20px;
+  border-radius: 16px;
+  text-align: center;
+  color: white;
+  max-width: 600px;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Deskripsi */
+.deskripsi {
+  max-width: auto;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.deskripsi h2 {
+  font-size: 30px;
+  color: #a00000;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.deskripsi h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #a00000;
+}
+
+.deskripsi p {
+  font-size: 20px;
+  font-family: sans-serif;
+  line-height: 1.9;
+  text-align: left;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Paket Section */
+.packages {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fff;
+  max-width: auto;
+  margin: 0 auto;
+}
+
+.packages h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #e60000;
+}
+
+.packages select {
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.package-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.package-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 12px;
+  background: #f4f4f4;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+}
+
+.package-card h3 {
+  color: #e60000;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.package-card p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #e60000;
+  color: white;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #c40000;
+}
+
+/* Call Center */
+.call-center {
+  background: #f0f0f0;
+  padding: 50px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.call-center h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #e60000;
+}
+
+.call-center p {
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 80px);
+    background: rgba(230, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+    gap: 30px;
+    transition: right 0.5s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hero-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .deskripsi h2 {
+    font-size: 1.8rem;
+  }
+
+  .deskripsi p {
+    font-size: 1rem;
+  }
+}
+
+/* Burger Animation */
+.burger.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.burger.toggle .line2 {
+  opacity: 0;
+}
+
+.burger.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -6px);
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IndiHome Jogja - Paket Internet & TV Kabel</title>
+  <link rel="stylesheet" href="indihome.css" />
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="container">
+      <div class="logo">IndiHome</div>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#paket">Paket</a></li>
+          <li><a href="#call">Kontak</a></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0">Daftar</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="indihome.mp4" type="video/mp4">
+      Browser Anda tidak mendukung video.
+    </video>
+    <div class="hero-text">
+      <h2>Internet untuk Segala Kebutuhan</h2>
+      <p>Nikmati koneksi internet cepat, stabil, dan terjangkau untuk seluruh keluarga.</p>
+      <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">CHAT AGEN</a>
+    </div>
+  </section>
+
+  <section class="deskripsi">
+    <h2>Internet Unlimited Cepat dan Stabil untuk Seluruh Wilayah Yogyakarta</h2>
+    <p>
+      IndiHome Jogja menawarkan layanan internet unlimited berbasis fiber optic dengan kecepatan dan kestabilan ideal untuk kebutuhan di rumah, kantor, atau usaha Anda. Dengan koneksi WiFi yang handal, nikmati aktivitas seperti bekerja, belajar, streaming, dan gaming tanpa gangguan.
+    </p>
+    <p>
+      Pendaftaran kini lebih praktis melalui WhatsApp, menjadikan IndiHome solusi terpercaya bagi masyarakat Jogja yang mencari internet berkualitas tinggi dengan harga terjangkau. Paket reguler kami menjadi favorit berkat kestabilan dan harga kompetitif, dengan berbagai pilihan sesuai wilayah: Sleman, Kota Yogyakarta, Bantul, Kulon Progo, dan Gunungkidul.
+    </p>
+    <p>
+      Pilih IndiHome Jogja untuk koneksi digital yang cepat dan nyaman setiap hari!
+    </p>
+  </section>
+
+  <section id="paket" class="packages">
+    <h2>Pilihan Paket</h2>
+    <select id="wilayah" onchange="tampilkanPaket()">
+      <option value="internetonly">Internet Only</option>
+      <option value="internetstbtv">Internet+STB TV</option>
+      <option value="internettsel">Interne+Kuota tsel</option>
+      <option value="kota">Kota Yogyakarta</option>
+    </select>
+    <div class="package-list">
+      <div class="package-card" data-wilayah="internetonly">
+        <h3>50 Mbps</h3>
+        <p>Rp230.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetonly">
+        <h3>75 Mbps</h3>
+        <p>Rp250.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetonly">
+        <h3>150 Mbps</h3>
+        <p>Rp325.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetonly">
+        <h3>200 Mbps + Netflix</h3>
+        <p>Rp490.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+
+      <div class="package-card" data-wilayah="internetstbtv">
+        <h3>50 Mbps</h3>
+        <p>Rp345.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetstbtv">
+        <h3>75 Mbps</h3>
+        <p>Rp365.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetstbtv">
+        <h3>150 Mbps</h3>
+        <p>Rp460.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internetstbtv">
+        <h3>200 Mbps + Netflix</h3>
+        <p>Rp625.000</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+
+      <div class="package-card" data-wilayah="internettsel">
+        <h3>10 Mbps +30GB</h3>
+        <p>Rp180.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internettsel">
+        <h3>50 Mbps + 15GB</h3>
+        <p>Rp270.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internettsel">
+        <h3>75 Mbps + 15GB</h3>
+        <p>Rp285.000/bulan</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internettsel">
+        <h3>150 Mbps + 15GB</h3>
+        <p>Rp335.000</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+      <div class="package-card" data-wilayah="internettsel">
+        <h3>300 Mbps + 30GB</h3>
+        <p>Rp888.000</p>
+        <a href="https://api.whatsapp.com/send/?phone=6285191252487&text=Halo%2C+Saya+Ingin+Cek+Paket+Promo+di+Lokasi+Saya%2C+Apakah+Bisa+Dibantu+Informasi+Lanjut%3F&type=phone_number&app_absent=0" class="btn">Berlangganan</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="call" class="call-center">
+    <h2>IndiHome Branch Yogyakarta</h2>
+    <p>Website ini dikelola oleh mitra resmi Telkomsel. Basecamp Mitra Wilayah Operasional Kerja 2
+
+      Jl. Ki Ageng Pemanahan No.17, Sorosutan, Kec. Umbulharjo, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55191
+      Informasi di dalam situs ini bertujuan untuk membantu calon pelanggan memahami layanan IndiHome berdasarkan sumber resmi.
+      Kontak Pengelola Website : ( Yudha ) 085159094911</p>
+    <p>Hubungi kami di <strong>188</strong> atau WhatsApp <strong>085191252487</strong></p>
+  </section>
+
+  <footer>
+    <p>&copy; indihomebytelkomsel.com</p>
+  </footer>
+
+  <script src="indihome.js"></script>
+</body>
+</html>
